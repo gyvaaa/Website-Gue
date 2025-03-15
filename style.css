@@ -1,0 +1,266 @@
+/* Gyvana Hafizhah Syan*/
+/* 243307012*/
+
+/* GENERAL STYLING */
+body {
+    font-family: 'Poppins', sans-serif; /* Menggunakan font Poppins */
+    background-color: #f5f7fa; /* Warna latar belakang halaman */
+    margin: 0; /* Menghapus margin bawaan browser */
+    padding: 0; /* Menghapus padding bawaan browser */
+    color: #333; /* Warna teks utama */
+}
+
+/* NAVBAR */
+.custom-menu {
+    background: rgba(0, 120, 231, 0.9); /* Warna biru transparan untuk navbar */
+    padding: 15px; /* Padding agar lebih rapi */
+    display: flex; /* Menggunakan flexbox agar lebih fleksibel */
+    justify-content: space-between; /* Menyebarkan elemen navbar */
+    align-items: center; /* Menyamakan posisi vertikal elemen */
+}
+.custom-menu a {
+    color: white; /* Warna teks navbar */
+    font-weight: bold; /* Membuat teks tebal */
+    transition: 0.3s; /* Efek transisi saat hover */
+}
+.custom-menu a:hover {
+    color: #ffdd57; /* Warna kuning saat hover */
+}
+
+/* HERO SECTION */
+.hero {
+    text-align: center; /* Menengahkan teks */
+    padding: 120px 20px; /* Padding agar elemen tidak terlalu rapat */
+    background: linear-gradient(135deg, #0078e7, #003973); /* Gradient warna biru */
+    color: white; /* Warna teks putih */
+}
+.hero h1 {
+    font-size: 3em; /* Ukuran font judul hero */
+    margin-bottom: 10px; /* Jarak bawah dari elemen selanjutnya */
+}
+.hero p {
+    font-size: 1.2em; /* Ukuran font teks deskripsi */
+}
+.hero .pure-button {
+    background: #ffdd57; /* Warna kuning tombol */
+    color: black; /* Warna teks tombol */
+    font-weight: bold; /* Membuat teks lebih tebal */
+    padding: 10px 20px; /* Padding agar tombol lebih proporsional */
+    border-radius: 25px; /* Membuat tombol bulat */
+    transition: 0.3s; /* Efek transisi saat hover */
+}
+.hero .pure-button:hover {
+    background: #ffbe00; /* Warna kuning yang lebih tua saat hover */
+}
+
+/* PROFILE */
+.profile {
+    padding: 50px; /* Memberikan ruang di dalam elemen */
+    background: #fff; /* Warna latar putih */
+    text-align: center; /* Menengahkan teks */
+    border-radius: 10px; /* Membuat sudut elemen melengkung */
+    width: 70%; /* Lebar elemen */
+    margin: 30px auto; /* Posisi tengah dengan margin */
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+}
+
+.profile-container {
+    display: flex; /* Menggunakan flexbox */
+    align-items: center; /* Pusatkan elemen secara vertikal */
+    justify-content: center; /* Pusatkan elemen secara horizontal */
+    gap: 30px; /* Beri jarak antar elemen */
+}
+
+.profile img {
+    width: 150px; /* Ukuran foto profil */
+    border-radius: 50%; /* Membuat foto berbentuk lingkaran */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+    transition: transform 0.3s ease-in-out; /* Efek transisi saat hover */
+}
+
+.profile img:hover {
+    transform: scale(1.1); /* Memperbesar foto saat dihover */
+}
+
+.bio {
+    text-align: left; /* Teks bio rata kiri */
+}
+
+.bio-table {
+    width: 100%; /* Lebar tabel bio */
+    border-collapse: collapse; /* Menghilangkan garis ganda antar tabel */
+}
+
+.bio-table td {
+    padding: 12px; /* Padding agar tidak terlalu rapat */
+    border-bottom: 1px solid #ddd; /* Garis pemisah antar baris */
+    transition: background 0.3s ease-in-out; /* Efek hover */
+}
+
+.bio-table tr:hover td {
+    background: rgba(0, 0, 0, 0.05); /* Warna abu-abu saat hover */
+}
+
+/* ABOUT */
+.about {
+    text-align: center; /* Pusatkan teks */
+    padding: 40px 20px; /* Padding */
+    background: #f8f8f8; /* Warna latar abu muda */
+    border-radius: 10px; /* Membuat sudut melengkung */
+    margin: 30px auto; /* Posisi tengah */
+    width: 60%; /* Lebar elemen */
+}
+
+.about h2 {
+    color: #E91E63; /* Warna merah muda untuk judul */
+}
+
+.about .highlight {
+    font-weight: bold; /* Menonjolkan teks */
+    color: #D91656; /* Warna merah tua */
+}
+
+/* PORTFOLIO */
+.portfolio {
+    padding: 30px 20px; /* Padding */
+    text-align: center; /* Pusatkan teks */
+}
+
+.portofolio h2 {
+    margin-bottom: 10px; /* Jarak bawah */
+}
+
+.projects {
+    margin-bottom: 10px; /* Memberikan sedikit ruang antar elemen */
+}
+
+.project-container {
+    display: flex; /* Menggunakan flexbox */
+    flex-wrap: wrap; /* Agar elemen responsif */
+    justify-content: center; /* Pusatkan elemen */
+    gap: 20px; /* Beri jarak antar elemen */
+    padding: 50px 20px; /* Padding */
+    align-items: stretch; /* Agar semua elemen sejajar */
+}
+
+.project-card {
+    width: 300px; /* Ukuran kartu */
+    background: white; /* Warna latar */
+    border-radius: 15px; /* Membuat sudut kartu melengkung */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+    padding: 20px; /* Padding */
+    text-align: center; /* Pusatkan teks */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efek hover */
+    position: relative; /* Posisi relatif untuk animasi */
+    overflow: hidden; /* Menghindari elemen keluar batas */
+}
+
+.project-card:hover {
+    transform: translateY(-10px); /* Geser ke atas saat hover */
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.2); /* Efek bayangan saat hover */
+}
+
+.project-card img {
+    width: 100%; /* Ukuran gambar menyesuaikan kartu */
+    border-radius: 10px; /* Sudut gambar melengkung */
+    margin-bottom: 10px; /* Jarak bawah */
+}
+
+.project-card h3 {
+    font-size: 1.2em; /* Ukuran teks judul */
+    color: #212121; /* Warna teks */
+}
+
+.project-card p {
+    font-size: 0.9em; /* Ukuran teks deskripsi */
+    color: #555; /* Warna teks abu-abu */
+}
+
+.project-card .btn {
+    display: inline-block; /* Menjadikan tombol inline */
+    margin-top: 15px; /* Jarak atas */
+    padding: 8px 16px; /* Padding tombol */
+    background: #E91E63; /* Warna tombol merah muda */
+    color: white; /* Warna teks */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    border-radius: 5px; /* Sudut tombol melengkung */
+    font-weight: bold; /* Membuat teks lebih tebal */
+    transition: background 0.3s ease; /* Efek hover */
+}
+
+.project-card .btn:hover {
+    background: #D91656; /* Warna lebih tua saat hover */
+}
+
+/* BLOG SECTION - Menata tampilan blog */
+.blog {
+    padding: 50px; /* Memberikan ruang di sekitar konten blog */
+    background: #fff; /* Warna latar belakang putih */
+    text-align: center; /* Teks ditengah */
+}
+.blog-articles {
+    display: flex; /* Menggunakan flexbox untuk tata letak */
+    flex-wrap: wrap; /* Memungkinkan artikel berbaris ke bawah jika layar kecil */
+    gap: 20px; /* Jarak antar artikel */
+    justify-content: center; /* Memusatkan artikel */
+}
+.article-card {
+    width: 320px; /* Lebar kartu artikel */
+    background: white; /* Warna latar belakang putih */
+    padding: 15px; /* Ruang di dalam kartu */
+    border-radius: 10px; /* Membuat sudut kartu melengkung */
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek mengangkat */
+    transition: 0.3s; /* Efek transisi saat hover */
+}
+.article-card img {
+    width: 100%; /* Gambar memenuhi lebar kartu */
+    border-radius: 5px; /* Membuat sudut gambar melengkung */
+}
+.article-card:hover {
+    transform: scale(1.05); /* Membesarkan kartu saat hover */
+}
+
+/* FOOTER - Menata bagian footer */
+footer {
+    background: #003973; /* Warna latar biru gelap */
+    color: white; /* Warna teks putih */
+    padding: 20px; /* Ruang di dalam footer */
+    text-align: center; /* Teks di tengah */
+    margin-top: 50px; /* Jarak atas agar tidak terlalu mepet */
+}
+
+/* ABOUT SECTION - Bagian tentang */
+.about {
+    padding: 50px; /* Ruang di sekitar konten about */
+    background: #f8f9fa; /* Warna latar abu-abu muda */
+    text-align: center; /* Teks ditengah */
+}
+.about h2 {
+    font-size: 2em; /* Ukuran judul lebih besar */
+    margin-bottom: 10px; /* Jarak bawah dari teks */
+}
+.about p {
+    font-size: 1.1em; /* Ukuran teks yang nyaman dibaca */
+    max-width: 700px; /* Maksimal lebar paragraf agar tidak terlalu panjang */
+    margin: 0 auto; /* Memusatkan teks */
+    color: #555; /* Warna teks abu-abu gelap */
+}
+
+/* ICON PLACEHOLDER - Placeholder untuk ikon */
+.icon-placeholder {
+    width: 80px; /* Ukuran ikon */
+    height: 80px; /* Tinggi ikon */
+    display: block; /* Supaya ikon tidak inline */
+    margin: 0 auto 15px; /* Memusatkan ikon dengan jarak bawah */
+    border-radius: 10px; /* Membuat sudut ikon melengkung */
+}
+
+/* CODING ICON - Warna gradien untuk ikon coding */
+.coding {
+    background: linear-gradient(135deg, #3498db, #8e44ad); /* Gradien warna biru ke ungu */
+}
+
+/* UI/UX ICON - Warna gradien untuk ikon UI/UX */
+.uiux {
+    background: linear-gradient(135deg, #e74c3c, #f39c12); /* Gradien warna merah ke oranye */
+}
